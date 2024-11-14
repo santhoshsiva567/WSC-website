@@ -1,0 +1,31 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #17BA9D;
+    color: #fff;
+    border-radius: 50%; /* Makes the button round */
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.4s, transform 0.4s;
+    opacity: 0;
+    transform: translateY(100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    user-select: none;
+  }
+  
+  .scroll-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #555;
+    transform: scale(1.1);
+  }
+  
